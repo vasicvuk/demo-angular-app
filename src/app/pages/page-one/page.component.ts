@@ -8,4 +8,8 @@ export class PageOneComponent {
 
    constructor() {
    }
+
+   onChange(number) {
+    console.log('Calculation value changed to: ' + number);
+   }
 }
