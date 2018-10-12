@@ -1,0 +1,8 @@
+form {
+    text-align: left;
+    padding: 10px;
+}
+:host {
+    max-width: 500px;
+    display: block;
+}

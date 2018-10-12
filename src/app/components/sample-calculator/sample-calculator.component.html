@@ -1,0 +1,16 @@
+<form>
+    <div class="form-group">
+      <label for="A">A</label>
+      <input type="text" [(ngModel)]="numberA" name="numberA"  class="form-control" id="A" aria-describedby="emailHelp" placeholder="Enter A">
+      <small id="Ahelp" class="form-text text-muted">Enter any number.</small>
+    </div>
+    <div class="form-group">
+        <label for="B">B</label>
+        <input type="text" [(ngModel)]="numberB" name="numberB" class="form-control" id="B" aria-describedby="emailHelp" placeholder="Enter B">
+        <small id="Bhelp" class="form-text text-muted">Enter any number.</small>
+      </div>
+    <button type="submit" (click)="calculate()" class="btn btn-primary">Submit</button>
+    <div class="form-check">
+     {{result}}
+    </div>
+  </form>

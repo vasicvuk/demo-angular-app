@@ -1,0 +1,14 @@
+form {
+    text-align: left;
+    padding: 10px;
+}
+:host {
+    max-width: 500px;
+    display: block;
+}
+
+.result {
+    color: red;
+    font-size: 20px;
+    padding: 10px;
+}
