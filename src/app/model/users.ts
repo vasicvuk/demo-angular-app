@@ -12,3 +12,7 @@ export interface PagedUserList {
     total_pages: number;
     data: User[];
 }
+
+export interface UserData {
+    data: User;
+}

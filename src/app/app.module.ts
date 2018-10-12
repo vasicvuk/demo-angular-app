@@ -16,11 +16,13 @@ import { ReqResService } from './services/reqres.service';
 import { SampleServiceComponent } from './components/sample-service-component/sample-service.component';
 import { PageOneComponent } from './pages/page-one/page.component';
 import { PageTwoComponent } from './pages/page-two/page.component';
+import { PageThreeComponent } from './pages/page-three/page.component';
 
 // Routes definition
 const routes: Routes = [
   { path: '', component: PageOneComponent },
-  { path: 'page-two', component: PageTwoComponent }
+  { path: 'page-two', component: PageTwoComponent },
+  { path: 'page-three/:user-id', component: PageThreeComponent }
 ];
 
 @NgModule({
@@ -31,7 +33,8 @@ const routes: Routes = [
     SampleServiceComponent,
     ResultComponent,
     PageTwoComponent,
-    PageOneComponent
+    PageOneComponent,
+    PageThreeComponent
   ],
   imports: [
     BrowserModule,

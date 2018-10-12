@@ -1,6 +1,6 @@
 <div class="items" *ngIf="result">
     <div class="item" *ngFor="let data of result.data">
-        Name: {{data.first_name}} {{data.last_name}}
+        Name: {{data.first_name}} {{data.last_name}}  <a [routerLink]="['/page-three', data.id]">View</a>
     </div>
 </div>
 <div class="loading" *ngIf="!result">
